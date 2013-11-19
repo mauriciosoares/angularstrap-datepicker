@@ -5,6 +5,7 @@
 	<title>Document</title>
 
 	<link rel="stylesheet" href="datepicker.css">
+	<link rel="stylesheet" href="timepicker.css">
 </head>
 <body>
 
@@ -15,10 +16,16 @@
 		</div>
 
 		{{datepicker.date}}
+		<br><br><br>
+		<div class="control-group input-append">
+		  <input type="text" ng-model="timepicker.time" bs-timepicker >
+		  <button type="button" class="btn" data-toggle="timepicker"><i class="icon-time"></i></button>
+		</div>
 	</div>
 	
 	<script src="jquery.js"></script>
 	<script src="datepicker.js"></script>
+	<script src="timepicker.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="angularstrap.js"></script>
 
